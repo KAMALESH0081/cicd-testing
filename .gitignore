@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Gradio temporary files
+.gradio/
+
+# Environment variables
+.env
+
+.pytest_cache/
