@@ -1,7 +1,7 @@
 import gradio as gr
 
 def multiply_by_two(x):
-    return x * 4
+    return x * 2
 
 app = gr.Interface(
     fn=multiply_by_two,
