@@ -36,6 +36,7 @@ jobs:
         with:
           host: ${{ secrets.EC2_HOST }}
           key: ${{ secrets.EC2_SSH_KEY }}
+          username: ec2-user
           script: |
 
             cd /home/ec2-user/cicd-testing
