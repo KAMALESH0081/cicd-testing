@@ -7,7 +7,7 @@ app = gr.Interface(
     fn=multiply_by_two,
     inputs=gr.Number(label="Enter Number"),
     outputs=gr.Number(label="Result"),
-    title="Multiply By 2 (testing CI/CD pipeline)"
+    title="Multiply By 2"
 )
 
 if __name__ == "__main__":
