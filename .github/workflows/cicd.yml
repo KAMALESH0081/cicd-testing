@@ -40,7 +40,7 @@ jobs:
           script: |
 
             cd /home/ec2-user/cicd-testing
-            
+
             git fetch origin main
             git reset --hard origin/main
 
@@ -49,4 +49,4 @@ jobs:
 
             docker build -t my-gradio-app .
 
-            docker run -d --name my-gradio-app -p 7860:7860 my-gradio-app
+            docker run -d --name my-gradio-app --restart unless-stopped-p 7860:7860 my-gradio-app
